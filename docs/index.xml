@@ -8,12 +8,30 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate><atom:link href="https://amenchise.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Post 01</title>
-      <link>https://amenchise.github.io/docs/post_01/</link>
+      <title>00 - Fabricación Digital</title>
+      <link>https://amenchise.github.io/docs/00_fabricacion_digital/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://amenchise.github.io/docs/post_01/</guid>
-      <description>Publicación 01 con lo que me llamó la atención del texto DESIGN REMIX SHARE REPEAT.</description>
+      <guid>https://amenchise.github.io/docs/00_fabricacion_digital/</guid>
+      <description>Publicación 00 con lo que me llamó la atención del texto DESIGN REMIX SHARE REPEAT.</description>
+    </item>
+    
+    <item>
+      <title>01 - Planimetrías</title>
+      <link>https://amenchise.github.io/docs/01_planimetria/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://amenchise.github.io/docs/01_planimetria/</guid>
+      <description>Publicación 01 con la investigación del Matrimonio Charles y Ray Eames junto con su silla Lounge Chair Wood (LCW).</description>
+    </item>
+    
+    <item>
+      <title>02 - </title>
+      <link>https://amenchise.github.io/docs/02_mecanizado_cnc/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://amenchise.github.io/docs/02_mecanizado_cnc/</guid>
+      <description>Publicación 01 con .</description>
     </item>
     
     <item>
