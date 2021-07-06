@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>02 -  - Angelo Menchise - Taller Fabricación 2021</title>
+  <title>02 - Mecanizado CNC - Angelo Menchise - Taller Fabricación 2021</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="https://amenchise.github.io/favicon.png">
@@ -99,7 +99,15 @@
     </li>
     
     <li class="active ">
-      <a href="https://amenchise.github.io/docs/02_mecanizado_cnc/">02 - </a>
+      <a href="https://amenchise.github.io/docs/02_mecanizado_cnc/">02 - Mecanizado CNC</a>
+    </li>
+    
+    <li class="">
+      <a href="https://amenchise.github.io/docs/03_mecanizado_2.5/">03 - </a>
+    </li>
+    
+    <li class="">
+      <a href="https://amenchise.github.io/docs/04/">04 - </a>
     </li>
     
     <li class="">
@@ -117,9 +125,124 @@
         </div>
         <div class="col-12 col-md-9">
           
-<h1 class="title">02 - </h1>
+<h1 class="title">02 - Mecanizado CNC</h1>
 <div class="content ">
-  
+  <p><img src="/img/Imagenes_Post_03/01.png" alt="Maquina CNC"></p>
+<h2 id="qué-es-el-cnc">¿Qué es el CNC?</h2>
+<p>El control numérico por computadora (cuya abreviación corresponde a CNC) es un sistema que permite controlar en todo momento la posición de un elemento físico. Normalmente una herramienta, que está montada en una máquina.</p>
+<p>Esto se consigue mediante un programa y un conjunto de órdenes añadidas. Con los cuales se pueden controlar las coordenadas de posición de un punto (la herramienta que trabaja el producto) respecto a un origen (la posición de la máquina).</p>
+<p>Si tuviéramos un cubo, cada una de las aristas se compondría de unas coordenadas propias e únicas. Así, para dirigir una punta de una herramienta al tocar cada una de las coordenadas, solo hay que introducir las órdenes pertinentes en el programa. Se cargará en la máquina, la cual, ejecutará todos los caminos. La primera cifra representa el desplazamiento sobre el eje X, la segunda sobre el eje Y, y la tercera sobre el eje Z. Como se puede observar, el trabajo se realiza sobre un plano tridimensional.</p>
+<hr>
+<h2 id="ejemplo-de-mecanizado-cnc">Ejemplo de Mecanizado CNC</h2>
+<p>Teniendo ya claro que son las máquinas CNC, en el presente post desarrollaré un ejemplo de mecanizado de producto con el programa de Fusion 360. Utilizando así la Silla Fresia en madera que se puede visualizar a continuación:</p>
+<h2 id="hahahugoshortcode-s0-hbhb"><div>
+    <iframe 
+    src='https://alumnos4786.autodesk360.com/shares/public/SH919a0QTf3c32634dcfdbee9cb8f25870bf?mode=embed'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div></h2>
+<h5 id="isométrica-explotada">Isométrica Explotada:</h5>
+<h2 id="hahahugoshortcode-s1-hbhb"><div>
+    <iframe 
+    src='https://alumnos4786.autodesk360.com/shares/public/SH919a0QTf3c32634dcf8f2249ee844a5fd8?mode=embed'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div></h2>
+<h5 id="lista-de-partes">Lista de Partes:</h5>
+<h2 id="maquina-cncimgimagenes_post_0302png"><img src="/img/Imagenes_Post_03/02.png" alt="Maquina CNC"></h2>
+<hr>
+<h2 id="procedimiento-en-fusion-360">Procedimiento en Fusion 360</h2>
+<p>El proceso de construcción de la Silla Fresia se separará en tres partes, las primeras dos se mostrarán en el presente Post y la última que corresponde al Respaldo del asiento se mostrará en el siguiente Post de &ldquo;Mecanizado 2.5&rdquo; dado que requiere otra técnica de fabricación.</p>
+<h5 id="modelo-silla-fresia">Modelo Silla Fresia:</h5>
+<h2 id="hahahugoshortcode-s2-hbhb"><a class="face-button" href="/descargas/silla_fresia.f3d" download>
+    <div class="face-primary">
+        <span class="icon fa fa-cloud"></span>
+        Descargar
+    </div>
+    <div class="face-secondary">
+        <span class="icon fa fa-hdd-o"></span>
+    </div>
+</a>
+
+</h2>
+<h3 id="parte-01">Parte 01</h3>
+<p>La primera parte de este procedimiento consiste en trabajar con todas las partes de la silla a excepción del Asiento y el Respaldo. Una vez abierto el Fusion 360 con el modelo de la Silla Fresia tendremos que seguir los siguientes pasos:</p>
+<h6 id="01---definir-nuestra-área-de-trabajo-con-12--de-plancha-de-terciado">01 - Definir nuestra área de trabajo con 1/2  de plancha de terciado</h6>
+<p>Vamos a presionar el botón de Sketch y con la vista puesta en Top procederemos a crear un rectángulo desde el origen de unos 1220 mm x 1220 mm, para posteriormente con el botón de Extrude (o presionando la tecla e) realizar un grosor de unos 15mm.</p>
+<h6 id="02---posicionar-las-piezas-de-la-silla-en-la-plancha">02 - Posicionar las piezas de la Silla en la plancha</h6>
+<p>Ahora con el comando Move/Copy y Align vamos a mover y alinear todas las piezas de la silla (a excepción del respaldo y asiento) en la plancha, tomando en consideración que el calado de cada pieza (si es que posee) quede mirando hacia arriba. En este sentido todas las piezas quedarán &ldquo;dentro&rdquo; de esta plancha y debemos optimizar los espacios con tal de minimizar el desperdicio de madera.</p>
+<h6 id="03---cambio-de-herramientas-y-definición-de-máquina-cnc">03 - Cambio de herramientas y definición de máquina CNC</h6>
+<p>Luego vamos a presionar el boton de diseño y apretamos manufactura con tal de acceder a diferentes herramientas en la parte superior de Fusion 360. En este área de mecanizado comenzaremos por apretar la carpetita de setup y escogeremos la máquina Autodesk Generic 3-axis</p>
+<h6 id="04---escoger-piezas-a-cortar">04 - Escoger piezas a cortar</h6>
+<p>Ahora en la ventana que esta a nuestra derecha iremos a la pestaña Setup y en la parte de modelo vamos a seleccionar todas las piezas que queremos cortar (se recomienza apagar la plancha)</p>
+<h6 id="05---definir-la-plancha">05 - Definir la plancha</h6>
+<p>Ahora vamos a la pestaña de Stock que esta en la parte superior de esta ventana y definimos el &ldquo;Stock Solid&rdquo; que correspondería a nuestra plancha.</p>
+<h6 id="06---definir-modelo-de-orientación">06 - Definir Modelo de orientación</h6>
+<p>En esta misma pestaña de Setup apretamos modelo de orientación y seleccionamos &ldquo;Select Z axis/plane &amp; X axis&rdquo; y presionamos la superficie de la tabla y la orilla mas cercana a nosotros respectivamente.</p>
+<h6 id="07---definir-punto-de-origen-de-la-máquina">07 - Definir Punto de Origen de la máquina</h6>
+<p>Si vemos un poco mas abajo que en el paso anterior seleccionamos el botón de Stock Point y definimos la esquina inferior izquierda como el punto de partida.</p>
+<p>Teniendo toda esta configuración inicial lista, que correspondería a definir nuestro espacio de trabajo, procederemos a programar las acciones que realizará la máquina CNC con tal de cortar todas nuestras piezas.</p>
+<h6 id="08---2d-contour">08 - 2D Contour</h6>
+<p>Luego de apagar la plancha vamos a apretar arriba el botón de 2D Contour y vamos a escojer en todas las piezas el vector inferior de los calados. Con tal de cuidar la fresa y tener un mejor corte en la madera procederemos a seleccionar abajo en la izquierda el setup de 2D Contour y nos iremos a Edit. Aquí en la pestaña Passes iremos a Multiple Dephs y cambiaremos el 1mm por 3 mm con tal de cortar el material de a poco por capas y no todo de una vez.</p>
+<p>Posteriormente, al apretar ok en la ventana de la derecha escogeremos la fresa de 6mm tipo &ldquo;Flat end mill&rdquo;, con lo cual aparecerá en pantalla el cabezal de la máquina y la trayectoria a lo largo del modelo.</p>
+<h6 id="09---2d-pocket">09 - 2D Pocket</h6>
+<p>Una vez terminado el paso anterior seguiremos por apretar arriba el botón de 2D Pocket, con lo cual haremos los diversos rebajes en todas nuestras piezas al seleccionar las areas a rebajar. En este sentido, haremos lo mismo que antes al seleccionar la pestaña Passes y poner 3mm en la parte de Multiple Dephs (La fresa ya está seleccionada dado que ocupa la última que se utilizó).</p>
+<h6 id="10---2d-contour">10 - 2D Contour</h6>
+<p>Finalmente, volveremos a utilizar el comando de 2D Contour pero esta vez para los bordes de nuestras piezas seleccionando los contornos exteriores. Asi pues, volveremos a ajustar el Multiple Dephs a 3 mm pero también tendremos que utilizar tabs que se encuentran en la pestaña de Geometría en nuestra ventana que esta en nuestro lado derecho. Ocuparemos la forma rectangular que viene por default pero la distancia de altura y distancia la cambiaremos a 3 mm y 350 mm respectivamente. Esto lo hacemos dado que no queremos que al momento de finalizar de cortar las piezas las cosas se muevan de lugar y genere cortes indeseados.</p>
+<h6 id="11---simular">11 - Simular</h6>
+<p>Finalmente podemos decir que ya programamos todo el procedimiento para poder crear nuestras piezas en esta primera parte, por lo que podemos simular todo el proceso al presionar click derecho abajo en la izquierda la carpeta Setup que contiene todos los procesos y apretar simular. Esto lo hacemos con tal de checkear todo el proceso completo y previsualizar como sería el desarrollo real con la máquina CNC.</p>
+<hr>
+<p>Todos estos procedimientos de la primera parte se resumen en el siguiente video:</p>
+<h2 id="hahahugoshortcode-s3-hbhb"><div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/TutorialCNC01.mp4"  type="video/mp4">
+    </video>
+</div></h2>
+<hr>
+<h3 id="parte-02">Parte 02</h3>
+<p>En esta segunda parte vamos a continuar desarrollando lo que sería la parte del asiento de nuestra silla que requiere de un proceso distinto que le permitirá dar flexibilidad a esta pieza de madera. En este sentido se adjunta a continuación el botón de descarga de esta pieza dado que a diferencia del asiento que ya se encuentra en el modelo de la silla, este nuevo archivo cuenta con los trazados que se utilizarán para desarrollar esta pieza.</p>
+<h5 id="asiento-de-silla-fresia">Asiento de Silla Fresia:</h5>
+<h2 id="hahahugoshortcode-s4-hbhb"><a class="face-button" href="/descargas/asiento.f3d" download>
+    <div class="face-primary">
+        <span class="icon fa fa-cloud"></span>
+        Descargar
+    </div>
+    <div class="face-secondary">
+        <span class="icon fa fa-hdd-o"></span>
+    </div>
+</a>
+
+</h2>
+<h6 id="01--">01 -</h6>
+<h6 id="02--">02 -</h6>
+<h6 id="03--">03 -</h6>
+<hr>
+<p>En fin, todo lo explicado anteriormente se ilustra en el siguiente video:</p>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/video02planimetria.mp4"  type="video/mp4">
+    </video>
+</div>
+<hr>
+<h3 id="bibliografía">Bibliografía</h3>
+<p><a href="https://www.mecanizadossinc.com/sistema-cnc-control-numerico-por-computadora/">https://www.mecanizadossinc.com/sistema-cnc-control-numerico-por-computadora/</a></p>
+
 </div>
 </div>
 
