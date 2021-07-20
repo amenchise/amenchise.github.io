@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>03 -  - Angelo Menchise - Taller Fabricación 2021</title>
+  <title>03 - Mecanizado CNC 2.5 - Angelo Menchise - Taller Fabricación 2021</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="https://amenchise.github.io/favicon.png">
@@ -107,7 +107,7 @@
     </li>
     
     <li class="active ">
-      <a href="https://amenchise.github.io/docs/03_mecanizado_2.5/">03 - </a>
+      <a href="https://amenchise.github.io/docs/03_mecanizado_2.5/">03 - Mecanizado CNC 2.5</a>
     </li>
     
     <li class="">
@@ -129,9 +129,466 @@
         </div>
         <div class="col-12 col-md-9">
           
-<h1 class="title">03 - </h1>
+<h1 class="title">03 - Mecanizado CNC 2.5</h1>
 <div class="content ">
+  <p>En en presente post continuaré desarrollando la última pieza de nuestra Silla Fresia correspondiente al respaldo.</p>
+<h2 id="hahahugoshortcode-s0-hbhb"><div>
+    <iframe 
+    src='https://alumnos4786.autodesk360.com/shares/public/SH919a0QTf3c32634dcfdbee9cb8f25870bf?mode=embed'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div></h2>
+<h5 id="isométrica-explotada">Isométrica Explotada:</h5>
+<h2 id="hahahugoshortcode-s1-hbhb"><div>
+    <iframe 
+    src='https://alumnos4786.autodesk360.com/shares/public/SH919a0QTf3c32634dcf8f2249ee844a5fd8?mode=embed'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div></h2>
+<h5 id="lista-de-partes">Lista de Partes:</h5>
+<h2 id="maquina-cncimgimagenes_post_0302png"><img src="/img/Imagenes_Post_03/02.png" alt="Maquina CNC"></h2>
+<h2 id="procedimiento-en-fusion-360">Procedimiento en Fusion 360</h2>
+<p>Dado que este proceso de contrucción corresponde a una continuación del Post anterior de Mecanizado CNC, utilizaremos el mismo modelo, pero tendremos que exportar en otro documento el respaldo (item 8) de nuestra silla. Asi pues al final del Post hay un video con todo el proceso y el paso a paso sería el de a continuación:</p>
+<h5 id="modelo-silla-fresia">Modelo Silla Fresia:</h5>
+<h2 id="hahahugoshortcode-s2-hbhb"><a class="face-button" href="/descargas/silla_fresia.f3d" download>
+    <div class="face-primary">
+        <span class="icon fa fa-cloud"></span>
+        Descargar
+    </div>
+    <div class="face-secondary">
+        <span class="icon fa fa-hdd-o"></span>
+    </div>
+</a>
+
+</h2>
+<h6 id="01---exportar-el-respaldo-del-modelo">01 - Exportar el Respaldo del Modelo</h6>
+<p>Al abrir el archivo en Fusion 360 procederemos por seleccionar la pieza del respaldo y con click derecho vamos a la opción de crear nuevo componente, una vez hecho esto seleccionamos el componente y lo exportamos como un archivo Fusion (.F3d). Así pues, haremos un upload del nuevo archivo al Fusion 360 y lo abriremos como un nuevo documento.</p>
+<h6 id="02---orientar-el-modelo-con-el-origen">02 - Orientar el modelo con el origen</h6>
+<p>En este paso tendremos que mover y alinear nuestro respaldo con respecto a los ejes del Fusion 360, con tal de que presente una ortogonalidad con respecto al origen y nuestra futura plancha que realizaremos en el siguiente paso. Es muy relevante dado que el mecanizado se realiza en torno a las dos caras de la plancha y debe existir simetría, así pues nos tenemos que asegurar de que el lateral de nuetra pieza quede paralelo a la vista Right.</p>
+<h6 id="03---realizar-plancha">03 - Realizar plancha</h6>
+<p>A continuación nos iremos a la vista superior y haremos un Sketch con respecto a este plano justo por abajo de nuestra pieza. Realizaremos un rectangulo de un tamaño aproximado con tal de que sobre material alrededor y un extrude aproximado también con tal de que nuestra pieza quede contenida por el &ldquo;Stock&rdquo;/Plancha. Procedemos así a cambiar la opacidad de la plancha a un 20% con tal de facilitar los pasos posteriores.</p>
+<h6 id="04---manufactura-y-setup-inicial">04 - Manufactura y Setup Inicial</h6>
+<p>Con toda esta configuración inicial lista pasamos al area de manufactura. En donde tendremos que hacer el mismo setup que hicimos para las partes anteriores y que se explicaron en el Post anterior. Apretamos la carpeta del Setup y en la pestaña del lado derecho seleccionamos la máquina CNC de 3 Ejes. Luego vamos a la pestaña de Stock y seleccionamos nuestra plancha como objeto solido. Regresamos al Setup y vamos a definir la orientación Z &amp; X como la cara superior y el borde mas cercano a nosotros respectivamente. Luego el punto de origen en la esquina inferior izquierda. Para finalmente definir nuestra pieza como el modelo.</p>
+<h6 id="05---definir-la-proyección-del-respaldo-en-la-plancha-como-nuestro-límite-del-mecanizado">05 - Definir la proyección del respaldo en la plancha como nuestro límite del mecanizado</h6>
+<p>Regresamos ahorita al área de Diseño y haremos un nuevo sketch pero esta vez en la cara superior de la plancha. Y vamos a Create, Proyect, Proyect (o simplemente apretamos la tecla P), y si le hacemos click a nuestro objeto se hará una proyeccion de nuestra pieza en la cara superior de nuestro Stock/Plancha.</p>
+<h6 id="06---adaptative-cleaning">06 - Adaptative Cleaning</h6>
+<p>Ahorita en el área de Manufactura comenzaremos por realizar la primera función que corresponde a Adaptative Cleaning, que es una limpieza o desbaste adaptativo que es basicamente el remover material con tal de acelerar un poco el procedimiento posterior de obtención de la superficie deseada en nuestra pieza. En este caso se debe seleccionar la Fresa de “6 mm Falt Endmill” ocupada en las piezas anteriores, pero modificándole su “Lenght below holder” de 22,5 a 40, para que la fresa no choque con la estructura que está cortando. Una vez establecida la fresa, vamos a la pestaña de geometría en nuestra ventana de la derecha y  determinamos cual será el “Machine Boundary” (area donde trabajará la fresa), siendo este una selección del sketch creado en el paso anterior. En cuanto al modelo, seleccionamos el respaldo. Finalmente,sabemos que al contar con una fresa de 6 mm debemos ajustar el Optimal Load de 6mm a 3mm con tal de no exigirle mas del 50% del diametro de la fresa.</p>
+<h6 id="07---parallel">07 - Parallel</h6>
+<p>Luego utilizaremos una segunda funcion llamada Parallel, utilizaremos la misma fresa configurada en el paso anterior (pudiendo optar también por una fresa de punta redonda que pueda darle mayor precisión al rallado, como por puede ser la “6mm Ball End Mill” y con un mismo “Lenght below holder” de 40 ), en la Geometría seleccionamos nuevamente el mismo “Machine Boundary” y el mismo modelo (sin incluir el Setup Model).</p>
+<h6 id="08---parallel-02">08 - Parallel 02</h6>
+<p>Con tal de obtener una mejor superficie de tallado en el modelo siempre se recomienda hacer un segundo Parallel en dirección perpenticular. Por lo que simplemente vamos a la carpeta de setup y ducplicaremos el paso anterior de Parallel, pero le haremos Edit y en la pestaña de passes cambiaremos el Pass Direction a 90 grados y bajando su stepover de 3mm a 2mm, para lograr así una mejor resolución superficial.</p>
+<h6 id="09---simular">09 - Simular</h6>
+<p>Finalmente podemos decir que ya programamos todo el procedimiento para poder crear nuestra ultima pieza de la silla correspondiente al respaldo, por lo que procedemos a simular todo el proceso al presionar click derecho abajo en la izquierda la carpeta Setup que contiene todos los procesos y apretar simular. Esto lo hacemos con tal de checkear todo el proceso completo y previsualizar como sería el desarrollo real con la máquina CNC.</p>
+<h6 id="10---repetir-procedimiento-para-la-parte-trasera">10 - Repetir procedimiento para la parte trasera</h6>
+<p>Después de que finalizamos el proceso de desbaste y las trayectorias de terminación del lado frontal del respaldo, debemos hacer el mismo procedimiento pero para la parte trasera. Así pues, debemos volver a repetir los mismos pasos desde el segundo, orientando esta vez la otra cara de la plancha hacia la vista superior.</p>
+<hr>
+<p>Todos estos procedimientos de la ultima pieza faltante de la Silla Fresia se resumen en el siguiente video:</p>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/cnc2.5.mp4"  type="video/mp4">
+    </video>
+</div>
+<hr>
+<h3 id="algunas-imágenes-del-proceso-real">Algunas imágenes del proceso real:</h3>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//01.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//01.jpg" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//01.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//02.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//02.jpg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//02.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//03.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//03.jpg" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//03.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//04.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//04.jpg" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//04.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//05.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//05.jpg" alt="5th" />
+				    </div>
+			      <figcaption>
+		          <p>5th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//05.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//06.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//06.jpg" alt="6th" />
+				    </div>
+			      <figcaption>
+		          <p>6th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//06.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//07.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//07.jpg" alt="7th" />
+				    </div>
+			      <figcaption>
+		          <p>7th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//07.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//08.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//08.jpg" alt="8th" />
+				    </div>
+			      <figcaption>
+		          <p>8th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//08.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//09.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//09.jpg" alt="9th" />
+				    </div>
+			      <figcaption>
+		          <p>9th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//09.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//10.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//10.jpg" alt="10th" />
+				    </div>
+			      <figcaption>
+		          <p>10th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//10.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//11.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//11.jpg" alt="11th" />
+				    </div>
+			      <figcaption>
+		          <p>11th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//11.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//12.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//12.jpg" alt="12th" />
+				    </div>
+			      <figcaption>
+		          <p>12th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//12.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//13.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//13.jpg" alt="13th" />
+				    </div>
+			      <figcaption>
+		          <p>13th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//13.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//14.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//14.jpg" alt="14th" />
+				    </div>
+			      <figcaption>
+		          <p>14th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//14.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//15.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//15.jpg" alt="15th" />
+				    </div>
+			      <figcaption>
+		          <p>15th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//15.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//16.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//16.jpg" alt="16th" />
+				    </div>
+			      <figcaption>
+		          <p>16th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//16.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//17.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//17.jpg" alt="17th" />
+				    </div>
+			      <figcaption>
+		          <p>17th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//17.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//18.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//18.jpg" alt="18th" />
+				    </div>
+			      <figcaption>
+		          <p>18th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//18.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//19.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//19.jpg" alt="19th" />
+				    </div>
+			      <figcaption>
+		          <p>19th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//19.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//20.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//20.jpg" alt="20th" />
+				    </div>
+			      <figcaption>
+		          <p>20th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//20.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//21.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//21.jpg" alt="21st" />
+				    </div>
+			      <figcaption>
+		          <p>21st</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//21.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//22.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//22.jpg" alt="22nd" />
+				    </div>
+			      <figcaption>
+		          <p>22nd</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//22.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//23.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//23.jpg" alt="23rd" />
+				    </div>
+			      <figcaption>
+		          <p>23rd</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//23.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//24.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//24.jpg" alt="24th" />
+				    </div>
+			      <figcaption>
+		          <p>24th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//24.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//25.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//25.jpg" alt="25th" />
+				    </div>
+			      <figcaption>
+		          <p>25th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//25.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//26.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//26.jpg" alt="26th" />
+				    </div>
+			      <figcaption>
+		          <p>26th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//26.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//27.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//27.jpg" alt="27th" />
+				    </div>
+			      <figcaption>
+		          <p>27th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//27.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//28.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//28.jpg" alt="28th" />
+				    </div>
+			      <figcaption>
+		          <p>28th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//28.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//29.jpg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//29.jpg" alt="29th" />
+				    </div>
+			      <figcaption>
+		          <p>29th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//29.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
   
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
+
 </div>
 </div>
 
