@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>04 - Diseño Generativo - Angelo Menchise - Taller Fabricación 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://amenchise.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.a32658f2eedb9bb852f8513925cb445e40633983f1ff54349b037dd04eafa2fa.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://amenchise.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://amenchise.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://amenchise.github.io/docs/00_fabricacion_digital/">00 - Fabricación Digital</a>
+    </li>
+    
+    <li class="">
+      <a href="https://amenchise.github.io/docs/01_planimetria/">01 - Planimetrías</a>
+    </li>
+    
+    <li class="">
+      <a href="https://amenchise.github.io/docs/02_mecanizado_cnc/">02 - Mecanizado CNC</a>
+    </li>
+    
+    <li class="">
+      <a href="https://amenchise.github.io/docs/02_mecanizado_grupal/">02 - Mecanizado CNC Grupal</a>
+    </li>
+    
+    <li class="">
+      <a href="https://amenchise.github.io/docs/03_mecanizado_2.5/">03 - Mecanizado CNC 2.5</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://amenchise.github.io/docs/04_dise%C3%B1o_generativo/">04 - Diseño Generativo</a>
+    </li>
+    
+    <li class="">
+      <a href="https://amenchise.github.io/docs/05/">04 - </a>
+    </li>
+    
+    <li class="">
+      <a href="https://amenchise.github.io/docs/06/">04 - </a>
+    </li>
+    
+    <li class="">
+      <a href="https://amenchise.github.io/docs/ejemplo/">Ejemplo Shortcodes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://amenchise.github.io/docs/markdown/">Ejemplos Markdown</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">04 - Diseño Generativo</h1>
+<div class="content ">
+  <h2 id="qué-es-el-diseño-generativo">¿Qué es el Diseño Generativo?</h2>
+<p>El diseño generativo es un proceso iterativo que genera múltiples salidas de diseño cumpliendo con las restricciones predefinidas. Este proceso se utiliza en varios campos, como el arte, la arquitectura y el diseño de productos para producir salidas de sonidos, imágenes a modelos CAD. Uno de los principales beneficios del diseño generativo es que es un método rápido para explorar las posibilidades de diseño. Por ejemplo, esta técnica de diseño permite evaluar, no cientos, sino miles de posibles soluciones en un plazo relativamente corto.</p>
+<p>En el mundo de la fabricación, este método de diseño se ha utilizado para optimizar piezas. El proceso de diseño generativo comienza dentro de un software que puede generar opciones listas para CAD basadas en restricciones del mundo real y requisitos de rendimiento. Al definir estas restricciones y requisitos, los ingenieros pueden lograr una ponderación ligera, mejoras de rendimiento, consolidación de piezas o sostenibilidad, por ejemplo. Por lo tanto, el diseño generativo está cambiando el proceso de diseño para que los ingenieros pueden resolver desafíos y encontrar soluciones de diseño que no hubieran podido concebir por sí mismos.</p>
+<p><img src="/img/Imagenes_Post_04/01.png" alt="Maquina CNC">
+Los métodos de ingeniería generativa pueden lograr un peso ligero mientras mantienen la resistencia de las piezas.</p>
+<hr>
+<h2 id="tutorial-ejemplo-bracket">Tutorial Ejemplo Bracket</h2>
+<p>En este tutorial se desarrolla el paso a paso de como realizar un diseño generativo para un objeto usando de herramienta el programa Fusion 360. En este sentido, utilizaremos uno de los modelos de ejemplo que se encuentran en el mismo software, llamado Bracket.</p>
+<p>El paso a paso sería el siguiente (los botones aparecerán <code>subrayados en el texto</code> y destacados con amarillo en las imágenes):</p>
+<h5 id="01---seleccionar-modelo">01 - Seleccionar Modelo</h5>
+<p>En el mismo Fusion 360 abrimos el panel de la izquierda, vamos hacia el final y apretamos <code>Generative Design Samples</code> y posteriormente <code>GE Bracket</code>.</p>
+<p><img src="/img/Imagenes_Post_04/02.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/03.png" alt="PASO A PAS0"></p>
+<p><img src="/img/Imagenes_Post_04/04.png" alt="PASO A PASO"></p>
+<hr>
+<h5 id="02---generative-design">02 - Generative Design</h5>
+<p>Con el modelo ya cargado nos cambiaremos a pestaña del `Generative Design y dado que nos aparece un candado arribita en el nombre, procedemos por guardar el documento con tal de poder trabajar en el modelo.</p>
+<p><img src="/img/Imagenes_Post_04/05.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/06.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/07.png" alt="PASO A PASO"></p>
+<hr>
+<h5 id="03---generamos-un-nuevo-estudio">03 - Generamos un nuevo estudio</h5>
+<p>Para comenzar con el proceso en sí, creamos un <code>New Generative Study</code>, para posteriormente ir configurando en orden nuestro diseño generativo con todas las herramientas que aparecen en la parte de arriba, de izquierda a derecha</p>
+<p><img src="/img/Imagenes_Post_04/08.png" alt="PASO A PASO"></p>
+<hr>
+<h5 id="04---design-space--preserve-geometry">04 - Design Space / Preserve Geometry</h5>
+<p>Iremos luego a la opción <code>Preserve geometry</code> que está en la parte de Design Space, aquí se definen las piezas que queremos mantener y que sabemos que iran fijas en el modelo, para este modelo en específico corresponden alas partes esenciales que deben estar para que los ejes pasen y permitan el giro, marcaremos las que están en azul y pondremos ok.</p>
+<p><img src="/img/Imagenes_Post_04/09.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/10.png" alt="PASO A PASO"></p>
+<hr>
+<h5 id="05---design-space--obstacle-geometry">05 - Design Space / Obstacle Geometry</h5>
+<p>Iremos luego a la opción <code>Obstacle geometry</code> que está en la parte de Design Space, estas serán las geometrías donde no puede haber material. Eligiendo así entonces las dos piezas restantes en nuestro modelo.</p>
+<p><img src="/img/Imagenes_Post_04/11.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/12.png" alt="PASO A PASO"></p>
+<hr>
+<h5 id="06---design-conditions--structural-constrains">06 - Design Conditions / Structural Constrains</h5>
+<p>Ahora en <code>Structural Constrains</code> que está en la parte de Design Conditions, definimos las partes de la pieza que estarán ancladas. Que corresponderán a la cara inferior de los cuatro tubos por donde pasarán los pernos (se recomienda apagar el paso de obstacle geometry para mejor visivilidad).</p>
+<p><img src="/img/Imagenes_Post_04/13.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/14.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/15.png" alt="PASO A PASO"></p>
+<hr>
+<h5 id="07---design-conditions--structural-loads">07 - Design Conditions / Structural Loads</h5>
+<p>Luego en <code>Structural Loads</code> que está en la parte de Design Conditions, definimos las areas de nuestro modelo donde abrán cargas/fuerzas, con tal de que lo tome en consideración al momento de crear el diseño. Seleccionando así el interior de los dos tubos horizontales, para luego con el tab de vectores en la ventana de la derecha, escribir -1000 N (signo negativo para que el sentido sea hacia abajo) en el eje Z (FZ).</p>
+<p><img src="/img/Imagenes_Post_04/16.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/17.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/18.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/19.png" alt="PASO A PASO"></p>
+<hr>
+<h5 id="08---design-criteria--objectives">08 - Design Criteria / Objectives</h5>
+<p>Cambiando a la pestaña de Design Criteria, en <code>Objectives</code> tenemos dos posibilidades a escoger, mimimizar la masa de la pieza (muy utilizado en la aeronáutica) o maximizar su resistencia. En este caso nos quedaremos con la primera opción de minimizar la masa y vamos a definir el factor de seguridad en 2.0 (resiste hasta 2 veces la carga de fuerza definida anteriormente).</p>
+<p><img src="/img/Imagenes_Post_04/20.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/21.png" alt="PASO A PASO"></p>
+<hr>
+<h5 id="09---design-criteria--manufacturing">09 - Design Criteria / Manufacturing</h5>
+<p>En esta misma pestaña de Design Criteria, en <code>Manufacturing</code> vamos a definir la técnica de manufactura. Que para este caso va a ser con la técnica aditiva, para lo cual sacaremos la opción de <code>Milling</code>, y dejaremos todo el resto tal cual, presionando simplemente el <code>Cost Estimation</code>, dejandolo en las 2500 piezas.</p>
+<p><img src="/img/Imagenes_Post_04/22.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/23.png" alt="PASO A PASO"></p>
+<hr>
+<h5 id="10---materials--study-materials">10 - Materials / Study Materials</h5>
+<p>Posteriormente, pasando a los materiales tendremos que apretar el único boton de <code>Study Materials</code>, con tal de seleccionar todos los materiales en que queremos que nos desarrolle las propuestas de diseño generativo. Escogiendo así adicionalmente al <code>Aluminium AISi10Mg</code> preseleccionado  desde las carpetas de metales y plásticos el <code>Titanium 6AI-4V</code>, <code>Inconel 718 Plus</code> y <code>Orgasol Invent Smooth - PA 12</code>(arrastrando los materiales a la sección de Methods).</p>
+<p><img src="/img/Imagenes_Post_04/24.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/25.png" alt="PASO A PASO"></p>
+<hr>
+<h5 id="11---pre-check">11 - Pre Check</h5>
+<p>Ahora si, procedemos a hacer el <code>Pre Check</code>, donde apretaremos Ok.</p>
+<p><img src="/img/Imagenes_Post_04/26.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/27.png" alt="PASO A PASO"></p>
+<hr>
+<h5 id="12---preview">12 - Preview</h5>
+<p>Posteriormente, teniendo todos los pasos listos y configurados de izquierda a derecha en la parte de arriba o de arriba a abajo en la parte del costado izquierdo, haremos un <code>Previewer</code>de nuestro diseño. Aquí se generará una previzualización de como nuestro elemento se va a conformar, lo hacemos simplemente para tener un boceto muy rápido de como se conformarían nuetros diseños finales.</p>
+<p><img src="/img/Imagenes_Post_04/28.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/29.png" alt="PASO A PASO"></p>
+<hr>
+<h5 id="13---generate">13 - Generate</h5>
+<p>Aquí, pararemos nuestro previewer y terminaremos por mandar a procesar finalmente nuestro diseño generativo, apretando así el botón <code>Generate</code>. Lo que ocurre aquí basicamente es que nuestro problema de diseño se esta mandando a los servidores de Autodesk para que procesen nuestro requerimiento y nos manden posteriormente los resultados de diseños generativos que cumplen con nuestras configuraciones. Este proceso podría tardar de 1 a 3 horas dependiendo de la carga del servidor, por lo que simplemente queda esperar y podemos apretar <code>Finish Explore</code>.</p>
+<p><img src="/img/Imagenes_Post_04/30.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/31.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/32.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/33.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/34.png" alt="PASO A PASO"></p>
+<hr>
+<h5 id="14---explore">14 - Explore</h5>
+<p>Finalmente, solo queda esperar y una vez que esté listo nos vamos a la pestaña de <code>Explore</code> para ver los resultados.</p>
+<p><img src="/img/Imagenes_Post_04/35.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/36.jpeg" alt="PASO A PASO"></p>
+<hr>
+<h4 id="modelos-en-fusion-360">Modelos en Fusion 360:</h4>
+<div>
+    <iframe 
+    src='https://alumnos4786.autodesk360.com/shares/public/SH919a0QTf3c32634dcfdeeac3adc8d29a9b?mode=embed'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<div>
+    <iframe 
+    src='https://alumnos4786.autodesk360.com/shares/public/SH919a0QTf3c32634dcf86141ea3e13dd63d?mode=embed'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<hr>
+<h2 id="utilizando-el-diseño-generativo-en-un-problema">Utilizando el Diseño Generativo en un Problema</h2>
+<p>Teniendo ya claros el procedimiento del Diseño Generativo en Fusion 360, ahora plantearemos un problema un poco mas concreto en donde puede resultar muy beneficioso aplicar lo recién aprendido. Así pues, exploraremos en esta segunda parte cómo es que se puede mejorar el diseño de una ala de una avioneta, someteremos el actual diseño a una simulación para posteriormente utilizar el Diseño Generativo para mejorar el diseño y no tener deformaciones en nuestra ala.</p>
+<p><img src="/img/Imagenes_Post_04/40.jpg" alt="PASO A PASO"></p>
+<p>Dado que ya explicamos anteriormente el Paso a Paso del Diseño Generativo el presente tutorial será un poco mas resumido, consistiendo así en los siguientes pasos:</p>
+<h5 id="01---diseño-original">01 - Diseño Original</h5>
+<p>Como primer diseño poseemos los distintos componentes que ensamblados forman la ala de nuestra avioneta. No obstante, con tal de optimizar inicialmente el diseño de nuestra ala nos enfocaremos 1 solo componente, correspondiente a las diversas &ldquo;costillas&rdquo; que van por el interior de esta pieza y que a simple vista podrían tener una optimización en cuanto al diseño con tal de que sean resistentes y livianas para nuestra avioneta. Asi pues, para nuestro paso 02 plantearemos el problema sólo con una costilla de nuestra ala al ser la parte mas compleja y que se replica a lo largo de toda la pieza.</p>
+<p><img src="/img/Imagenes_Post_04/41.png" alt="PASO A PASO"></p>
+<div>
+    <iframe 
+    src='https://alumnos4786.autodesk360.com/shares/public/SH919a0QTf3c32634dcf92762fdaf9cebae9?mode=embed'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<hr>
+<h5 id="02---plantear-el-problema">02 - Plantear el Problema</h5>
+<p><img src="/img/Imagenes_Post_04/42.png" alt="PASO A PASO"></p>
+<div>
+    <iframe 
+    src='https://alumnos4786.autodesk360.com/shares/public/SH919a0QTf3c32634dcfe72fcf8f1376a26a?mode=embed'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<h6 id="21---plantear-el-problema">2.1 - Plantear el Problema</h6>
+<p>Una vez que tenemos la pieza aislada vamos a proceder por ir al área de <code>Simulation</code></p>
+<p><img src="/img/Imagenes_Post_04/43.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/44.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/45.png" alt="PASO A PASO"></p>
+<p><img src="/img/Imagenes_Post_04/46.png" alt="PASO A PASO"></p>
+<hr>
+<h5 id="03---simular-el-problema">03 - Simular el Problema</h5>
+<hr>
+<h5 id="04---propuesta-de-diseño-generativo">04 - Propuesta de Diseño Generativo</h5>
+<hr>
+<h5 id="05---guía-para-el-rediseño-de-la-pieza">05 - Guía para el Rediseño de la Pieza</h5>
+<hr>
+<h3 id="bibliografía">Bibliografía</h3>
+<p><a href="https://www.3dnatives.com/es/diseno-generativo-fabricacion-aditiva-170820202/#!">https://www.3dnatives.com/es/diseno-generativo-fabricacion-aditiva-170820202/#!</a></p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>
