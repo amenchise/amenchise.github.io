@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>05 - Impresión 3D  - Angelo Menchise - Taller Fabricación 2021</title>
+  <title>05 - Impresión 3D - Angelo Menchise - Taller Fabricación 2021</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="https://amenchise.github.io/favicon.png">
@@ -115,7 +115,7 @@
     </li>
     
     <li class="active ">
-      <a href="https://amenchise.github.io/docs/05_impresion_3d/">05 - Impresión 3D </a>
+      <a href="https://amenchise.github.io/docs/05_impresion_3d/">05 - Impresión 3D</a>
     </li>
     
     <li class="">
@@ -124,6 +124,10 @@
     
     <li class="">
       <a href="https://amenchise.github.io/docs/09_proceso_examen_2.0/">09 - Proceso Examen</a>
+    </li>
+    
+    <li class="">
+      <a href="https://amenchise.github.io/docs/10_examen_final/">10 - Examen Final</a>
     </li>
     
     <li class="">
@@ -141,9 +145,121 @@
         </div>
         <div class="col-12 col-md-9">
           
-<h1 class="title">05 - Impresión 3D </h1>
+<h1 class="title">05 - Impresión 3D</h1>
 <div class="content ">
-  
+  <h1 id="impresión-3d-con-fdm-y-sla">Impresión 3D con FDM y SLA</h1>
+<h2 id="fotoimgimagenes_post_0501jpg"><img src="/img/Imagenes_Post_05/01.jpg" alt="FOTO"></h2>
+<p>La primera tecnología conocida dentro de la impresión 3D fue la estereolitografía, mundialmente conocida por sus siglas SLA. Sus primeros desarrollos comienzan en 1986 cuando Chuck Hull, fundador de 3D Systems, registra la primera patente comercial de la que es la tecnología de fotopolimerización de una resina a través de láser. Años después surgió la tecnología DLP, basada en la misma técnica, pero utilizando luz generada por un proyector. En el desarrollo de las impresoras de tecnología SLA/DLP destacan empresas como Formlabs, B9Creations o Carbon 3D.</p>
+<p>Años después en 1988 Scott Crump, fundador del otro gigante de la impresión 3D, Stratasys, da a conocer las primeras máquinas de deposición de material fundido FDM (Fused Deposition Modeling) o también conocidas como FFF (Fused Filament Fabrication). Adquiriendo gran popularidad estas últimas debido a su fácil manejo y a su precio más reducido en comparación con las otras tecnologías. En el desarrollo de tecnologías FDM destacan empresas como Ultimaker, Makerbot o BQ.</p>
+<hr>
+<h2 id="impresión-3d-con-sla">Impresión 3D con SLA</h2>
+<p>En el caso de la tecnología SLA la resolución de los modelos está determinada por el punto óptico del láser o proyector. Además de que al imprimir no se aplica fuerza ya que utiliza la luz para su polimerización, lo que da como resultado superficies mucho más lisas.</p>
+<p><img src="/img/Imagenes_Post_05/02.jpg" alt="FOTO"></p>
+<h3 id="pros">Pros</h3>
+<ul>
+<li>Debido a la calidad de sus modelos esta tecnología puede ser utilizada en múltiples sectores</li>
+<li>Los diferentes tipos de resinas permiten crear modelos con propiedades diferentes, como por ejemplo las resinas castables</li>
+<li>Los modelos creados con esta técnica ofrece mayor precisión y fuerza</li>
+</ul>
+<h3 id="contras">Contras</h3>
+<ul>
+<li>Los precios de las impresoras 3D de esta tecnología está fuera de muchos presupuesto</li>
+<li>Se necesitan tener ciertos conocimientos técnicos para la correcta manipulación de las máquinas</li>
+</ul>
+<hr>
+<h2 id="impresión-3d-con-fdm">Impresión 3D con FDM</h2>
+<p>En la tecnología FDM la resolución está directamente relacionada con con el tamaño de la boquilla de extrusión y la precisión de los movimientos del extrusor (eje X/Y), por ello es de máxima importancia calibrar correctamente la máquina. Muchas veces la calidad también varía en función de la máquina, en su precisión y suavidad de impresión, ya que el peso de las capas superiores puede desplazar las inferiores, reduciendo la calidad.</p>
+<p><img src="/img/Imagenes_Post_05/03.jpg" alt="FOTO"></p>
+<h3 id="pros-1">Pros</h3>
+<ul>
+<li>Es la tecnología de escritorio más difundida de la industria</li>
+<li>Su mecanismo y utilización es mucho más sencillo</li>
+<li>Los precios de las impresoras 3D son más asequibles encontrándose en precios desde 200€ hasta 400€ las de mayor calidad.</li>
+</ul>
+<h3 id="contras-1">Contras</h3>
+<ul>
+<li>Requieren una minuciosa calibración para tener modelos con calidad</li>
+<li>Los detalles de impresión suelen ser menos que en el resto de las tecnologías</li>
+</ul>
+<hr>
+<h2 id="software-para-imprimir-en-sla---preform-de-formlabs">Software para imprimir en SLA - PreForm de Formlabs</h2>
+<p>Este proceso, conocido como SLA (estereolitografía), utiliza el principio de fotopolimerización para crear modelos 3D a partir de resinas sensible a los rayos UV. Esto se solidifica mediante el paso de un láser capa por capa, dotando con esto de mayor calidad a los modelos hechos con esta tecnologías. Asimismo, Formlabs es un gran desarrollador y fabricante de tecnología de impresión 3D, y se describen en su propia página web como la referencia del sector de la impresión 3D profesional para empresas de todo el mundo con impresoras 3D de escritorio y de trabajo accesibles y fiables. Cuentan con varias impresoras como la Form 3, Form 3L y Form 3B, y entregan un software llamado Perform que permite preparar los archivos OBJ o STL en unos pocos minutos para poder imprimirlos con esta tecnología SLA.</p>
+<p>Dicho todo esto, a continuación haré un pequeño tutorial de configuración del software Preform, que se descarga en el link de continuación:</p>
+<p><code>https://formlabs.com/latam/software/#preform</code></p>
+<hr>
+<h3 id="tutorial-software-preform">Tutorial Software PreForm</h3>
+<h4 id="configuración-inicial">Configuración inicial</h4>
+<p>Cuando recién abrimos el PreForm nos aparecerá la siguiente ventana de &ldquo;Recorrido por PreForm&rdquo;, por lo que tendremos que seguir los pasos que el mismo programa nos muestra.</p>
+<p><img src="/img/Imagenes_Post_05/17.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Post_05/18.png" alt="FOTO">
+<img src="/img/Imagenes_Post_05/19.png" alt="FOTO">
+<img src="/img/Imagenes_Post_05/20.png" alt="FOTO"></p>
+<hr>
+<h2 id="software-para-imprimir-en-fdm---ultimaker-cura">Software para imprimir en FDM - Ultimaker Cura</h2>
+<p>Elegido por millones de usuarios, Ultimaker Cura es el software de impresión 3D más popular del mundo. Prepara impresiones con unos cuantos clics, intégralo con el software de CAD para un mejor flujo de trabajo o aprovecha las configuraciones personalizadas para conseguir un control más completo.</p>
+<p>En el corazón de Ultimaker Cura se encuentra su potente motor de corte de código abierto, creado gracias a años de desarrollo interno por parte de expertos y contribuciones de los usuarios.</p>
+<ul>
+<li>
+<p>Los perfiles recomendados probados durante miles de horas garantizan resultados seguros</p>
+</li>
+<li>
+<p>El &ldquo;modo personalizado&rdquo; ofrece más de 400 configuraciones para lograr un control granular</p>
+</li>
+<li>
+<p>Las actualizaciones periódicas mejoran constantemente las funciones y la experiencia de impresión​</p>
+</li>
+</ul>
+<p>Dicho todo esto, a continuación haré un pequeño tutorial de configuración del software Ultimate Cura, que se descarga en el link de continuación:</p>
+<p><code>https://ultimaker.com/es/software/ultimaker-cura</code></p>
+<hr>
+<h3 id="tutorial-software-ultimaker-cura">Tutorial Software Ultimaker Cura</h3>
+<h4 id="configuración-inicial-de-impresora">Configuración inicial de impresora</h4>
+<p>Cuando recién abrimos el Ultimaker Cura nos aparecerá la siguiente ventana, por lo que tendremos que seguir los pasos que el mismo programa nos muestra.</p>
+<p><img src="/img/Imagenes_Post_05/01.png" alt="FOTO"></p>
+<p>Al momento de llegar al paso de seleccionar una impresora procederemos por ir a las impresoras que no están conectadas a la Web y bajamos a la categoría de <code>Creality3D</code> y seleccionamos la impresora <code>Creality Ender 3</code>.</p>
+<p><img src="/img/Imagenes_Post_05/02.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Post_05/03.png" alt="FOTO"></p>
+<p>Luego nos cargaran las especificaciones de la impresora y en la pestaña <code>Extruder 1</code> nos aseguramos de que el diametro del material esta en 1.75mm.</p>
+<p><img src="/img/Imagenes_Post_05/04.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Post_05/05.png" alt="FOTO"></p>
+<p>Terminando así con la impresora seleccionada como se muestra a continuación:</p>
+<p><img src="/img/Imagenes_Post_05/06.png" alt="FOTO"></p>
+<h4 id="selección-de-material-y-cabezal-nozzle">Selección de Material y Cabezal (Nozzle)</h4>
+<p>Una vez que tenemos la impresora lista continuaremos por seleccionar el material <code>Purple PLA +</code> tan como se aprecia en la siguiente imagen, seguido de un diametro del cabezal de <code>0.4mm</code>:</p>
+<p><img src="/img/Imagenes_Post_05/07.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Post_05/08.png" alt="FOTO"></p>
+<h4 id="importar-algun-objeto-en-formato-stl">Importar algun objeto en formato STL</h4>
+<p>Procedemos por apretar la carpeta que está en la esquina superior izquiera y seleccionamos algun objeto en formato STL.</p>
+<p><img src="/img/Imagenes_Post_05/09.png" alt="FOTO"></p>
+<p>Así pues, nos encontramos con 3 herramientas que nos podrían ser de utilidad para acomodar nuestra pieza, <code>Mover</code>, <code>Escalar</code> y <code>Rotar</code>.</p>
+<p><img src="/img/Imagenes_Post_05/10.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Post_05/11.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Post_05/12.png" alt="FOTO"></p>
+<h4 id="configuraciones-de-la-impresión">Configuraciones de la impresión</h4>
+<p>Posteriormente nos vamos a la pestaña superior derecha para realizar las configuraciones de la impresora, apretamos <code>Custom</code>y en la pestaña <code>Quality</code> vamos a cambiar la altura que existe entre cada capa de los 0.1mm actuales a <code>0.32mm</code>, y cambiaremos la densidad de relleno en la pestaña <code>Infill</code> a <code>6</code>. Dejando todo el resto tal cual procedemos a apretar el boton azul de <code>Slice</code> de abajo a la derecha (en el caso de ya haber hecho el slice apretamos el botón de <code>Preview</code>).</p>
+<p><img src="/img/Imagenes_Post_05/13.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Post_05/14.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Post_05/15.png" alt="FOTO"></p>
+<h4 id="previsualización-y-listo-para-imprimir">Previsualización y listo para Imprimir</h4>
+<p>Finalmente ya teniendo todo listo solo queda por ir a la pestaña de <code>Preview</code> y con el circulo/barra de la derecha podemos movernos en la linea de tiempo de lo que sería nuestra impresión real.</p>
+<p><img src="/img/Imagenes_Post_05/16.png" alt="FOTO"></p>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/VideoImpresionFDM.mp4"  type="video/mp4">
+    </video>
+</div>
+<hr>
+<h4 id="optimización-de-noozle-en-impresora-fdm">Optimización de Noozle en impresora FDM</h4>
+<p>Adicionalmente vale comentar algo bastante relevante que se debe tener en cuenta al momento de imprimir con impresoras FDM, y es que de manera general existen cabezales o nozzles que oscilan desde los 0.2mm a 10 mm, donde es estándar suele ser el cabezal de 0.4 mm. Si decidimos ocupar cabezales mas pequeños que este estamos aumentando la calidad pero sacrificando mayor tiempo de impresión, mientras que si buscamos cabezales mayores a 0.4 mm obtendremos impresiones mas rápidas pero con una menor calidad.</p>
+<p><img src="/img/Imagenes_Post_05/011.jpeg" alt="FOTO"></p>
+<hr>
+<h3 id="bibliografía">Bibliografía</h3>
+<p><a href="https://www.3dnatives.com/es/fdm-o-sla-impresion-3d-131220172/#!">https://www.3dnatives.com/es/fdm-o-sla-impresion-3d-131220172/#!</a></p>
+<p><a href="https://ultimaker.com/es/software/ultimaker-cura">https://ultimaker.com/es/software/ultimaker-cura</a></p>
+
 </div>
 </div>
 
