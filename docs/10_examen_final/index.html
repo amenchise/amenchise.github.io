@@ -148,11 +148,11 @@
 <h1 class="title">10 - Examen Final</h1>
 <div class="content ">
   <h1 id="proceso-examen-final">PROCESO EXAMEN FINAL</h1>
-<p>Para realizar nuestro examen final como grupo nos pusimos a conversar en que es lo que queriamos realizar en base a la experimentación pasada, donde cada uno de los integrantes realizó una prueba con un biomaterial diferente. Desde esos resultados descubrimos que para formar un buen biomaterial es necesario un producto que le entregue firmesa al material junto con un aglutinante que sirva como pegamento entre los demás ingredientes. Luego de realizar una investigación sobre que material nos gustaría utilizar encontramos la espirulina​, que es un suplemento dietético que se obtiene a partir de cianobacterias del género Arthrospira y en este minuto se encuentra en investigación para ser utilizada como apoyo dietetico en los vuelos espaciales de largo plazo, como las misiones a Marte.</p>
-<p><img src="/img/Imagenes_Examen/01.jfif" alt="FOTO"></p>
+<p>Para realizar nuestro examen final como grupo nos pusimos a reflexionar sobre algo bastante relevante que nos estaba faltando en el avance anterior, nuestro producto final. Si bien habíamos acordado hacer un cenicero en base a biomaterial, encontramos que no era lo que realmente queríamos hacer, y de hecho se contradecía el hecho de ocupar un ingrediente tan beneficioso como la espirulina en algo tan malo para la salud como un cenicero que incentiva el fumar. En este sentido, luego de un largo brainstorming se nos ocurrió realizar un jabón que tuviera alguna forma interesante. Esto surgió de la actual relevancia que tiene el lavarse las manos en un contexto de pandemia y encontramos que si lográbamos hacer un jabón con algun diseño llamativo podríamos incentivar el lavado de manos en las personas, en particular los niños y niñas. Así pues, en el presente post los llevaremos por el proceso de creación de este interesante jabón con forma de helado que lleva el nombre de ICE SOAP.</p>
+<p><img src="/img/Imagenes_Examen/Marca/04.png" alt="FOTO"></p>
 <hr>
 <h1 id="1-creación-modelo---cono-de-helado">1. CREACIÓN MODELO - Cono de Helado</h1>
-<p>Para crear nuestro cono de helado con sus respectivas bolas de helado encima utilizamos el software de modelación Rhino 7. Los pasos de modelación se resumen en los siguientes pasos:</p>
+<p>Para crear nuestro cono de helado con sus respectivas bolas de helado encima utilizamos el software de modelación Rhino 7. El proceso de modelación se resume en los siguientes pasos:</p>
 <h4 id="paso-1">Paso 1</h4>
 <p>Dibujamos la siguiente silueta con los comandos <code>Polilínea</code> y <code>Curva de puntos de control</code>.</p>
 <p><img src="/img/Imagenes_Examen/Modelo/01.jpeg" alt="FOTO"></p>
@@ -164,7 +164,7 @@
 <p><img src="/img/Imagenes_Examen/Modelo/03.jpeg" alt="FOTO"></p>
 <p><img src="/img/Imagenes_Examen/Modelo/04.jpeg" alt="FOTO"></p>
 <h4 id="paso-4">Paso 4</h4>
-<p>Posteriormente, con tal de darle textura al cono haremos dos <code>Contour</code> sobre este cuerpo sólido en dos direcciones contrarias con tal de generar este efecto de malla característico de los conos artesanales. Vale comentar que no es tan relevante este paso, dado que posteriormente se tubo que eliminar esta textura del cono por temas del posterior moldeado, pero aún así fue parte del proceso.</p>
+<p>Posteriormente, con tal de darle textura al cono haremos dos <code>Contour</code> sobre este cuerpo sólido en dos direcciones contrarias con tal de generar este efecto de malla característico de los conos artesanales. (Vale comentar que no es tan relevante este paso, dado que posteriormente se tubo que eliminar esta textura del cono por temas del posterior moldeado, pero aún así fue parte del proceso.)</p>
 <p><img src="/img/Imagenes_Examen/Modelo/05.jpeg" alt="FOTO"></p>
 <h3 id="paso-5">Paso 5</h3>
 <p>A continuación se comienza por realizar diversos <code>Circulos</code> a distintas alturas y tamaños pero manteniendo el mismo centro, con tal de poder generar la silueta de lo que será una gota. Así pues, posteriormente se hará un <code>Loft</code> a traves de todas estas con tal de generar la forma sólida de estas gotas que darán el efecto de nuestro helado ligeramente derretido.</p>
@@ -174,7 +174,7 @@
 <p>Luego se termina la creación de la textura del cono con el comando <code>Pipe</code> en las polilineas creadas en el Paso 4 con el contour.</p>
 <p><img src="/img/Imagenes_Examen/Modelo/08.jpeg" alt="FOTO"></p>
 <h3 id="paso-7">Paso 7</h3>
-<p>Finalmente, tendremos que utilizar el comando <code>Esfera</code> unas tres veces para crear lo que serían nuestras bolas de helado, que en conjunto con algunos duplicados de las gotas realizadas en el Paso 5 podremos formar el helado que iría encima del cono. En este paso uno acomoda las esferas y gotas en alguna orientación que le acomode, para finalmente crear una <code>union booleana</code> de todos nustros sólidos que compondrán el helado.</p>
+<p>Finalmente, tendremos que utilizar el comando <code>Esfera</code> unas cuatro veces para crear lo que serían nuestras bolas de helado, que en conjunto con algunos duplicados de las gotas realizadas en el Paso 5 podremos formar el helado que iría encima del cono. En este paso uno acomoda las esferas y gotas en alguna orientación que le acomode, para finalmente crear una <code>union booleana</code> de todos nustros sólidos que compondrán el helado.</p>
 <p><img src="/img/Imagenes_Examen/Modelo/09.jpeg" alt="FOTO"></p>
 <h3 id="paso-8">Paso 8</h3>
 <p>Una vez que tenemos el diseño de lo que será nuestro Jabón tendremos que proceder por crear en el mismo Rhino 7 lo que será el molde para poder vertir los ingredientes del jabón posteriormente. En este sentido, al reflexionar en torno al hecho de que nuestro modelo tendrá que ser creado a través de un molde, la posibilidad de crear el diseño de textura que posee el cono que se realizó en el Paso 4 y 6 termina resultando bastante complejo, por lo que decidimos eliminar estos diversos tubos que van sobre el cono y nos quedamos con un modelo como el siguiente:</p>
@@ -183,7 +183,7 @@
 <h3 id="modelo-en-fusion-360">Modelo en Fusion 360:</h3>
 <h2 id="hahahugoshortcode-s0-hbhb"><div>
     <iframe 
-    src='https://alumnos4775.autodesk360.com/shares/public/SH56a43QTfd62c1cd968c1b3e36bcde3ba8c?mode=embed'
+    src='https://alumnos4775.autodesk360.com/shares/public/SH9285eQTcf875d3c539e93797c476edd328?mode=embed'
     width="100%" 
     height="450" 
     allowfullscreen="true" 
@@ -193,44 +193,124 @@
     </iframe>    
 </div></h2>
 <h3 id="planimetrias">Planimetrias:</h3>
-<p><img src="/img/bio2.0/plani1/Planimetria-Modelo-01.png" alt="Imagen Simple"></p>
-<p><img src="/img/bio2.0/plani1/Planimetria-Modelo-02.png" alt="Imagen Simple"></p>
+<p><img src="/img/Imagenes_Examen/02.png" alt="FOTO"></p>
+<h3 id="render">Render:</h3>
+<p><img src="/img/Imagenes_Examen/Modelo/10.jpeg" alt="FOTO"></p>
+<h3 id="modelo-ice-soap-en-expo-online">Modelo ICE SOAP en Expo Online:</h3>
+<div>
+    <iframe 
+    src='https://hubs.mozilla.com/sM7mTj3?embed_token=bc87834e377af5b2b12325ef1fb46f08'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<p>(Modelo presente a mano izquierda de la primera sala)</p>
+<hr>
+<h1 id="2-creación-molde">2. CREACIÓN MOLDE</h1>
+<p>Considerando el modelo final que obtuvimos con el proceso anterior, ahora procederemos por crear lo que será el molde de este objeto. Así pues, luego de un largo proceso de pensar como tendría que ser el molde con tal de facilitar el proceso real de un desmoldado que no rompa nuestra pieza, nos quedamos con el siguiente molde que se explicará a continuación:</p>
+<h4 id="paso-1-1">Paso 1</h4>
+<p>Con el mismo modelo del helado en el Rhino comenzaremos por crear un <code>cilindro</code> justo desde el centro de nuestro cono desde la vista Top, determinando un radio del círculo y altura de cilindro que permita dejar un grosor razonable entre todos bordes laterales y superiores de nuestro modelo y el cilindro. Finalmente solo tendremos que hacer una <code>diferencia booleana</code> con tal de plasmar nuestro modelo en lo que sería este molde.</p>
+<p><img src="/img/Imagenes_Examen/Molde/02.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Examen/Molde/03.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Examen/Molde/04.png" alt="FOTO"></p>
+<h4 id="paso-2-1">Paso 2</h4>
+<p>El siguiente paso consiste en utilizar la herramienta <code>partir</code> para poder dividir nuestro cilindro en 4 partes iguales, por lo que desde la misma vista top haremos dos lineas perpenticulares formando una cruz que permita cortar el cilindro. Posteriormente con tal de corroborar que quedaron las piezas bien vamos a mover 3 de ellas tal como se puede apreciar en la segunda imagen.</p>
+<p><img src="/img/Imagenes_Examen/Molde/05.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Examen/Molde/06.png" alt="FOTO"></p>
+<h4 id="paso-3-1">Paso 3</h4>
+<p>A continuación podemos darnos cuenta que falta cerrar las 4 partes de nuestro molde, por lo que utilizando las mismas líneas con las que partimos nuestro cilindro, haremos unos <code>section</code> con tal de extraer las curvas que hay que tapar, con estas curvas haremos un <code>planar surface</code> y con el comando <code>unir</code> iremos tapando las superficies faltantes obteniendo así 4 partes sólidas.</p>
+<p><img src="/img/Imagenes_Examen/Molde/07.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Examen/Molde/08.png" alt="FOTO"></p>
+<h4 id="paso-4-1">Paso 4</h4>
+<p>Finalmente tendremos que pensar en cómo mantendremos estas 4 partes del molde juntas al momento de vertir los ingredientes del jabón dentro del cilindro. En este sentido, haremos 4 <code>circulos</code> en la parte superior del cilindro, seguidos de un <code>planar surface</code> y <code>extrude</code> de 1 cm para este caso. Hacemos una <code>union booleana</code> de estos &ldquo;tarugos&rdquo; con sus respectivas partes del molde y solo faltaría hacer un circulo más grande del mismo diámetro que nuestro cilindro y con el mismo centímetro de grosor que los tarugos, aplicando para finalizar una <code>diferencia booleana</code> entre este circulo grande (cilindro en realidad) y los 4 pequeños.</p>
+<p><img src="/img/Imagenes_Examen/Molde/09.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Examen/Molde/10.png" alt="FOTO"></p>
+<p>Luego repetiremos el mismo proceso en la parte inferior de nuestro molde con la única diferencia que al momento de hacer el círculo grande del mismo diámetro que el cilindro, tambien tendremos que hacerle un <code>partir</code> en la superficie con el círculo interior del molde que es por donde se vertirán los ingredientes.</p>
+<p><img src="/img/Imagenes_Examen/Molde/11.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Examen/Molde/12.png" alt="FOTO"></p>
+<hr>
+<h3 id="molde-en-fusion-360">Molde en Fusion 360:</h3>
+<h2 id="hahahugoshortcode-s2-hbhb"><div>
+    <iframe 
+    src='https://alumnos4775.autodesk360.com/shares/public/SH9285eQTcf875d3c53985d926d2d5ee1a42?mode=embe'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div></h2>
+<h3 id="planimetrias-molde">Planimetrias Molde:</h3>
+<p><img src="/img/Imagenes_Examen/04.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Examen/03.png" alt="FOTO"></p>
 <h3 id="renders">Renders:</h3>
+<p><img src="/img/Imagenes_Examen/Molde/14.jpg" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Examen/Molde/13.jpg" alt="FOTO"></p>
+<hr>
+<h1 id="3-impresión-3d-del-molde">3. IMPRESIÓN 3D DEL MOLDE</h1>
+<p>La impresión fue realizada con una impresora del tipo FDM, utilizando el software Cura y la impresora Artillery Genius y filamento PLA, a una temperatura de extrusor de 220°C y 60°C la cama. A continuación algunas fotos del proceso:</p>
 <p>
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
 
 <div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://amenchise.github.io//img/bio2.0/render1/CENICERo.33.png');" >
-				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/bio2.0/render1/CENICERo.33.png" alt="Cenicero" />
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Impresion/01.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Impresion/01.jpeg" alt="1st" />
 				    </div>
 			      <figcaption>
-		          <p>Cenicero</p>
+		          <p>1st</p>
 			      </figcaption>
-				    <a href="https://amenchise.github.io//img/bio2.0/render1/CENICERo.33.png" itemprop="contentUrl"></a>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Impresion/01.jpeg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://amenchise.github.io//img/bio2.0/render1/CENICERo.34.png');" >
-				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/bio2.0/render1/CENICERo.34.png" alt="Cenicero" />
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Impresion/02.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Impresion/02.jpeg" alt="2nd" />
 				    </div>
 			      <figcaption>
-		          <p>Cenicero</p>
+		          <p>2nd</p>
 			      </figcaption>
-				    <a href="https://amenchise.github.io//img/bio2.0/render1/CENICERo.34.png" itemprop="contentUrl"></a>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Impresion/02.jpeg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://amenchise.github.io//img/bio2.0/render1/MOLDE%20Y%20CENICERo.34.png');" >
-				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/bio2.0/render1/MOLDE%20Y%20CENICERo.34.png" alt="Molde y cenicero" />
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Impresion/03.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Impresion/03.jpeg" alt="3rd" />
 				    </div>
 			      <figcaption>
-		          <p>Molde y cenicero</p>
+		          <p>3rd</p>
 			      </figcaption>
-				    <a href="https://amenchise.github.io//img/bio2.0/render1/MOLDE%20Y%20CENICERo.34.png" itemprop="contentUrl"></a>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Impresion/03.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Impresion/04.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Impresion/04.jpeg" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Impresion/04.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Impresion/05.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Impresion/05.jpeg" alt="5th" />
+				    </div>
+			      <figcaption>
+		          <p>5th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Impresion/05.jpeg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 </div>
@@ -296,81 +376,29 @@
 </div>
 </p>
 <hr>
-<h1 id="2-creación-molde">2. CREACIÓN MOLDE</h1>
-<p>Considerando el modelo final que obtuvimos con el proceso anterior, ahora procederemos por crear lo que será el molde de este objeto. Así pues, luego de un largo proceso de pensar como tendría que ser el molde con tal de facilitar el proceso real de un desmoldado que no rompa nuestra pieza, nos quedamos con el siguiente molde que se explicará a continuación:</p>
-<h4 id="paso-1-1">Paso 1</h4>
-<p>Con el mismo modelo del helado en el Rhino comenzaremos por crear un <code>cilindro</code> justo desde el centro de nuestro cono desde la vista Top, determinando un radio del círculo y altura de cilindro que permita dejar un grosor razonable entre todos bordes laterales y superiores de nuestro modelo y el cilindro. Finalmente solo tendremos que hacer una <code>diferencia booleana</code> con tal de plasmar nuestro modelo en lo que sería este molde.</p>
-<p><img src="/img/Imagenes_Examen/Molde/02.png" alt="FOTO"></p>
-<p><img src="/img/Imagenes_Examen/Molde/03.png" alt="FOTO"></p>
-<p><img src="/img/Imagenes_Examen/Molde/04.png" alt="FOTO"></p>
-<h4 id="paso-2-1">Paso 2</h4>
-<p>El siguiente paso consiste en utilizar la herramienta <code>partir</code> para poder dividir nuestro cilindro en 4 partes iguales, por lo que desde la misma vista top haremos dos lineas perpenticulares formando una cruz que permita cortar el cilindro. Posteriormente con tal de corroborar que quedaron las piezas bien vamos a mover 3 de ellas tal como se puede apreciar en la segunda imagen.</p>
-<p><img src="/img/Imagenes_Examen/Molde/05.png" alt="FOTO"></p>
-<p><img src="/img/Imagenes_Examen/Molde/06.png" alt="FOTO"></p>
-<h4 id="paso-3-1">Paso 3</h4>
-<p>A continuación podemos darnos cuenta que falta cerrar las 4 partes de nuestro molde, por lo que utilizando las mismas líneas con las que partimos nuestro cilindro, haremos unos <code>section</code> con tal de extraer las curvas que hay que tapar, con estas curvas haremos un <code>planar surface</code> y con el comando <code>unir</code> iremos tapando las superficies faltantes obteniendo así 4 partes sólidas.</p>
-<p><img src="/img/Imagenes_Examen/Molde/07.png" alt="FOTO"></p>
-<p><img src="/img/Imagenes_Examen/Molde/08.png" alt="FOTO"></p>
-<h4 id="paso-4-1">Paso 4</h4>
-<p>Finalmente tendremos que pensar en cómo mantendremos estas 4 partes del molde juntas al momento de vertir los ingredientes del jabón dentro del cilindro. En este sentido, haremos 4 <code>circulos</code> en la parte superior del cilindro, seguidos de un <code>planar surface</code> y <code>extrude</code> de 1 cm para este caso. Hacemos una <code>union booleana</code> de estos &ldquo;tarugos&rdquo; con sus respectivas partes del molde y solo faltaría hacer un circulo más grande del mismo diámetro que nuestro cilindro y con el mismo centímetro de grosor que los tarugos, aplicando para finalizar una <code>diferencia booleana</code> entre este circulo grande (cilindro en realidad) y los 4 pequeños.</p>
-<p><img src="/img/Imagenes_Examen/Molde/09.png" alt="FOTO"></p>
-<p><img src="/img/Imagenes_Examen/Molde/10.png" alt="FOTO"></p>
-<p>Luego repetiremos el mismo proceso en la parte inferior de nuestro molde con la única diferencia que al momento de hacer el círculo grande del mismo diámetro que el cilindro, tambien tendremos que hacerle un <code>partir</code> en la superficie con el círculo interior del molde que es por donde se vertirán los ingredientes.</p>
-<p><img src="/img/Imagenes_Examen/Molde/11.png" alt="FOTO"></p>
-<p><img src="/img/Imagenes_Examen/Molde/12.png" alt="FOTO"></p>
-<hr>
-<h2 id="molde-final---molde-cono-de-helado">MOLDE Final - Molde Cono de Helado</h2>
-<h3 id="molde-en-fusion-360">Molde en Fusion 360:</h3>
-<h2 id="hahahugoshortcode-s3-hbhb"><div>
-    <iframe 
-    src='https://alumnos4775.autodesk360.com/shares/public/SH56a43QTfd62c1cd968c1b3e36bcde3ba8c?mode=embed'
-    width="100%" 
-    height="450" 
-    allowfullscreen="true" 
-    webkitallowfullscreen="true" 
-    mozallowfullscreen="true"  
-    frameborder="0">
-    </iframe>    
-</div></h2>
-<h3 id="planimetrias-molde">Planimetrias Molde:</h3>
-<p><img src="/img/bio2.0/plani1/Planimetria-Modelo-01.png" alt="Imagen Simple"></p>
-<p><img src="/img/bio2.0/plani1/Planimetria-Modelo-02.png" alt="Imagen Simple"></p>
-<h3 id="renders-1">Renders:</h3>
+<h1 id="4-creación-jabón---ice-soap">4. CREACIÓN JABÓN - ICE SOAP</h1>
+<h4 id="paso-1-2">Paso 1</h4>
+<p>En primer lugar hay que recolectar todos los materiales necesarios:</p>
+<ul>
+<li>Petalos de rosas</li>
+<li>Colorantes</li>
+<li>Agua Destilada</li>
+<li>Esencia olor a rosas</li>
+<li>Base de jabón de glicerina</li>
+</ul>
 <p>
 
 
 <div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://amenchise.github.io//img/bio2.0/render1/CENICERo.33.png');" >
-				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/bio2.0/render1/CENICERo.33.png" alt="Cenicero" />
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/1/01.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/1/01.jpeg" alt="1st" />
 				    </div>
 			      <figcaption>
-		          <p>Cenicero</p>
+		          <p>1st</p>
 			      </figcaption>
-				    <a href="https://amenchise.github.io//img/bio2.0/render1/CENICERo.33.png" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://amenchise.github.io//img/bio2.0/render1/CENICERo.34.png');" >
-				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/bio2.0/render1/CENICERo.34.png" alt="Cenicero" />
-				    </div>
-			      <figcaption>
-		          <p>Cenicero</p>
-			      </figcaption>
-				    <a href="https://amenchise.github.io//img/bio2.0/render1/CENICERo.34.png" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://amenchise.github.io//img/bio2.0/render1/MOLDE%20Y%20CENICERo.34.png');" >
-				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/bio2.0/render1/MOLDE%20Y%20CENICERo.34.png" alt="Molde y cenicero" />
-				    </div>
-			      <figcaption>
-		          <p>Molde y cenicero</p>
-			      </figcaption>
-				    <a href="https://amenchise.github.io//img/bio2.0/render1/MOLDE%20Y%20CENICERo.34.png" itemprop="contentUrl"></a>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/1/01.jpeg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 </div>
@@ -378,17 +406,300 @@
 
 
 </p>
+<p>Primero para los petalos de rosas es necesario dejarlas secar dentro de un cuaderno ya que es la manera más fácil. De todas manera la base de jabón se puede hacer o se puede comprar.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/2/02.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/2/02.jpeg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/2/02.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h3 id="paso-2-2">Paso 2</h3>
+<p>Para continuar se cortan los petalos en pedazos pequeños y se hierven hasta que liberen su aroma.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/3/03.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/3/03.jpeg" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/3/03.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/3/04.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/3/04.jpeg" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/3/04.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h3 id="paso-3-2">Paso 3</h3>
+<p>Para este paso se necesita una olla y un plato de metal para hacer un baño María y asi derretir la base de jabón.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/4/05.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/4/05.jpeg" alt="5th" />
+				    </div>
+			      <figcaption>
+		          <p>5th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/4/05.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/4/06.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/4/06.jpeg" alt="6th" />
+				    </div>
+			      <figcaption>
+		          <p>6th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/4/06.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/4/07.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/4/07.jpeg" alt="7th" />
+				    </div>
+			      <figcaption>
+		          <p>7th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/4/07.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h3 id="paso-4-2">Paso 4</h3>
+<p>Una vez que el agua de los petalos hirviera se vierte sobre la base de jabón para que incorporen todos los ingredientes, luego se introducen la esencia y el colorante a elección.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/55/1.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/55/1.jpeg" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/55/1.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/55/2.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/55/2.jpeg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/55/2.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/55/3.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/55/3.jpeg" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/55/3.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h3 id="paso-5-1">Paso 5</h3>
+<p>La mejor forma de introducir el jabón dentro del molde es ir por parte, ya que lo mejor es asegurar las capas, es decir vergir un poco d ela mezcla y esperar que se seque así asta llegar hasta arriba.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/6/1.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/6/1.jpeg" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/6/1.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/6/2.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/6/2.jpeg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/6/2.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/6/3.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/6/3.jpeg" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/6/3.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/vaciado.mp4"  type="video/mp4">
+    </video>
+</div>
+<h3 id="paso-6-1">Paso 6</h3>
+<p>En este paso se comienza el desmolde de la pieza y hay que hacerlo son sumo cuidado.</p>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/desmolde.mp4"  type="video/mp4">
+    </video>
+</div>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/1.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/1.jpeg" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/1.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/2.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/2.jpeg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/2.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/3.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/3.jpeg" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/3.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/4.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/4.jpeg" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/4.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/5.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/5.jpeg" alt="5th" />
+				    </div>
+			      <figcaption>
+		          <p>5th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/5.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/6.jpeg');" >
+				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/6.jpeg" alt="6th" />
+				    </div>
+			      <figcaption>
+		          <p>6th</p>
+			      </figcaption>
+				    <a href="https://amenchise.github.io//img/Imagenes_Examen/Creacion/7/6.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h3 id="ice-soap-en-uso">ICE SOAP EN USO</h3>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/Jabon_final.mp4"  type="video/mp4">
+    </video>
+</div>
 <hr>
-<h1 id="3-impresión-3d-del-molde">3. IMPRESIÓN 3D DEL MOLDE</h1>
-<p>La impresión fue realizada con una impresora del tipo FDM&hellip;.</p>
-<hr>
-<h1 id="4-creación-jabón---ice-soap">4. CREACIÓN JABÓN - ICE SOAP</h1>
-<h4 id="materiales">Materiales:</h4>
-<ul>
-<li>3/4 tazas de agua.</li>
-</ul>
-<h4 id="paso-1-2">Paso 1</h4>
-<p>En este paso se vierten en una olla las 3/4 tazas de agua junto con 1/4 de tazas de maicena, mientras se diluye en el agua la maicena, es necesario incorporar los papeles picados para que se alcancen a integrar de buena manera en la mezcla.</p>
+<h1 id="4-creación-marca---ice-soap">4. CREACIÓN MARCA - ICE SOAP</h1>
+<p><img src="/img/Imagenes_Examen/Marca/01.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Examen/Marca/02.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Examen/Marca/03.png" alt="FOTO"></p>
+<p><img src="/img/Imagenes_Examen/Marca/04.png" alt="FOTO"></p>
 
 </div>
 </div>
