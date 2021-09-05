@@ -119,6 +119,14 @@
     </li>
     
     <li class="">
+      <a href="https://amenchise.github.io/docs/06_/">06 - Impresión 3D</a>
+    </li>
+    
+    <li class="">
+      <a href="https://amenchise.github.io/docs/07_/">07 - </a>
+    </li>
+    
+    <li class="">
       <a href="https://amenchise.github.io/docs/08_primera_experimentaci%C3%B3n_biomateriales/">08 - Experimentación con Biomateriales</a>
     </li>
     
@@ -172,11 +180,27 @@
     </iframe>    
 </div></h2>
 <h5 id="lista-de-partes">Lista de Partes:</h5>
-<h2 id="maquina-cncimgimagenes_post_0302png"><img src="/img/Imagenes_Post_03/02.png" alt="Maquina CNC"></h2>
+<p><img src="/img/Imagenes_Post_03/02.png" alt="Maquina CNC"></p>
+<hr>
+<h1 id="mecanizado-25-ejes">Mecanizado 2.5 Ejes</h1>
+<p>Pero antes de continuar con nuestra última pieza vale mencionar en que consiste el mecanizado en 2.5 ejes, que son un conjunto de procedimientos que se pueden aplicar en centros de mecanizado 2,5 ejes y 3 ejes (comúnmente conocidas como fresadoras), para fabricar piezas de distintos materiales, moviendo la herramienta en las coordenadas X e Y a la vez durante el corte de material o arranque de viruta.</p>
+<p>En un mecanizado por corte de 2,5 ejes, la herramienta se puede llegar a mover en un máximo de 3 ejes de la máquina (XYZ), pero nunca se moverá en las tres coordenadas a la vez durante la trayectoria de corte.</p>
+<p>En las dos imágenes que se muestran a continuación (figura 1), las trayectorias de corte (representadas por líneas continuas de color azul claro) están contenidas siempre en planos paralelos al XY (plano de la base), de modo que se trata de un mecanizado en 2,5 ejes.</p>
+<p><img src="/img/Imagenes_Post_03/01.jpeg" alt="Maquina CNC"></p>
+<p>Las estrategias de corte de 2,5 ejes se emplean fundamentalmente cuando la geometría es sencilla y para desbastar grandes cantidades de material de forma uniforme. También se usan para acabados de paredes en 2.5 ejes cuando no se necesita un acabado superficial muy fino.</p>
+<p>Esta estrategia de corte para fresadoras de 2,5 ejes, se puede encontrar en algunos programas de CAM, como Solid Edge CAM Pro, y dichas operaciones para mecanizar se encuentran dentro de la plantilla de mecanizado ‘mil_planar’ y en las 7 primeras para ‘mill_contour’ (figura 2). Las operaciones de mecanizado en 2,5 ejes más comunes son:</p>
+<ul>
+<li>Fresados de pisos y paredes.</li>
+<li>Fresado de caras.</li>
+<li>Fresado planario.</li>
+<li>Fresado de cavidades.</li>
+<li>Fresado de paredes en Z.</li>
+</ul>
+<hr>
 <h2 id="procedimiento-en-fusion-360">Procedimiento en Fusion 360</h2>
-<p>Dado que este proceso de contrucción corresponde a una continuación del Post anterior de Mecanizado CNC, utilizaremos el mismo modelo, pero tendremos que exportar en otro documento el respaldo (item 8) de nuestra silla. Asi pues al final del Post hay un video con todo el proceso y el paso a paso sería el de a continuación:</p>
+<p>Dado que este proceso de contrucción corresponde a una continuación del Post anterior de Mecanizado CNC, utilizaremos el mismo modelo, pero tendremos que exportar en otro documento el respaldo (item 8) de nuestra silla. Asi pues al comienzo de este procedimiento hay un video con todo proceso y el paso a paso sería el de a continuación:</p>
 <h5 id="modelo-silla-fresia">Modelo Silla Fresia:</h5>
-<h2 id="hahahugoshortcode-s2-hbhb"><a class="face-button" href="/descargas/silla_fresia.f3d" download>
+<a class="face-button" href="/descargas/silla_fresia.f3d" download>
     <div class="face-primary">
         <span class="icon fa fa-cloud"></span>
         Descargar
@@ -186,29 +210,9 @@
     </div>
 </a>
 
-</h2>
-<h6 id="01---exportar-el-respaldo-del-modelo">01 - Exportar el Respaldo del Modelo</h6>
-<p>Al abrir el archivo en Fusion 360 procederemos por seleccionar la pieza del respaldo y con click derecho vamos a la opción de crear nuevo componente, una vez hecho esto seleccionamos el componente y lo exportamos como un archivo Fusion (.F3d). Así pues, haremos un upload del nuevo archivo al Fusion 360 y lo abriremos como un nuevo documento.</p>
-<h6 id="02---orientar-el-modelo-con-el-origen">02 - Orientar el modelo con el origen</h6>
-<p>En este paso tendremos que mover y alinear nuestro respaldo con respecto a los ejes del Fusion 360, con tal de que presente una ortogonalidad con respecto al origen y nuestra futura plancha que realizaremos en el siguiente paso. Es muy relevante dado que el mecanizado se realiza en torno a las dos caras de la plancha y debe existir simetría, así pues nos tenemos que asegurar de que el lateral de nuetra pieza quede paralelo a la vista Right.</p>
-<h6 id="03---realizar-plancha">03 - Realizar plancha</h6>
-<p>A continuación nos iremos a la vista superior y haremos un Sketch con respecto a este plano justo por abajo de nuestra pieza. Realizaremos un rectangulo de un tamaño aproximado con tal de que sobre material alrededor y un extrude aproximado también con tal de que nuestra pieza quede contenida por el &ldquo;Stock&rdquo;/Plancha. Procedemos así a cambiar la opacidad de la plancha a un 20% con tal de facilitar los pasos posteriores.</p>
-<h6 id="04---manufactura-y-setup-inicial">04 - Manufactura y Setup Inicial</h6>
-<p>Con toda esta configuración inicial lista pasamos al area de manufactura. En donde tendremos que hacer el mismo setup que hicimos para las partes anteriores y que se explicaron en el Post anterior. Apretamos la carpeta del Setup y en la pestaña del lado derecho seleccionamos la máquina CNC de 3 Ejes. Luego vamos a la pestaña de Stock y seleccionamos nuestra plancha como objeto solido. Regresamos al Setup y vamos a definir la orientación Z &amp; X como la cara superior y el borde mas cercano a nosotros respectivamente. Luego el punto de origen en la esquina inferior izquierda. Para finalmente definir nuestra pieza como el modelo.</p>
-<h6 id="05---definir-la-proyección-del-respaldo-en-la-plancha-como-nuestro-límite-del-mecanizado">05 - Definir la proyección del respaldo en la plancha como nuestro límite del mecanizado</h6>
-<p>Regresamos ahorita al área de Diseño y haremos un nuevo sketch pero esta vez en la cara superior de la plancha. Y vamos a Create, Proyect, Proyect (o simplemente apretamos la tecla P), y si le hacemos click a nuestro objeto se hará una proyeccion de nuestra pieza en la cara superior de nuestro Stock/Plancha.</p>
-<h6 id="06---adaptative-cleaning">06 - Adaptative Cleaning</h6>
-<p>Ahorita en el área de Manufactura comenzaremos por realizar la primera función que corresponde a Adaptative Cleaning, que es una limpieza o desbaste adaptativo que es basicamente el remover material con tal de acelerar un poco el procedimiento posterior de obtención de la superficie deseada en nuestra pieza. En este caso se debe seleccionar la Fresa de “6 mm Falt Endmill” ocupada en las piezas anteriores, pero modificándole su “Lenght below holder” de 22,5 a 40, para que la fresa no choque con la estructura que está cortando. Una vez establecida la fresa, vamos a la pestaña de geometría en nuestra ventana de la derecha y  determinamos cual será el “Machine Boundary” (area donde trabajará la fresa), siendo este una selección del sketch creado en el paso anterior. En cuanto al modelo, seleccionamos el respaldo. Finalmente,sabemos que al contar con una fresa de 6 mm debemos ajustar el Optimal Load de 6mm a 3mm con tal de no exigirle mas del 50% del diametro de la fresa.</p>
-<h6 id="07---parallel">07 - Parallel</h6>
-<p>Luego utilizaremos una segunda funcion llamada Parallel, utilizaremos la misma fresa configurada en el paso anterior (pudiendo optar también por una fresa de punta redonda que pueda darle mayor precisión al rallado, como por puede ser la “6mm Ball End Mill” y con un mismo “Lenght below holder” de 40 ), en la Geometría seleccionamos nuevamente el mismo “Machine Boundary” y el mismo modelo (sin incluir el Setup Model).</p>
-<h6 id="08---parallel-02">08 - Parallel 02</h6>
-<p>Con tal de obtener una mejor superficie de tallado en el modelo siempre se recomienda hacer un segundo Parallel en dirección perpenticular. Por lo que simplemente vamos a la carpeta de setup y ducplicaremos el paso anterior de Parallel, pero le haremos Edit y en la pestaña de passes cambiaremos el Pass Direction a 90 grados y bajando su stepover de 3mm a 2mm, para lograr así una mejor resolución superficial.</p>
-<h6 id="09---simular">09 - Simular</h6>
-<p>Finalmente podemos decir que ya programamos todo el procedimiento para poder crear nuestra ultima pieza de la silla correspondiente al respaldo, por lo que procedemos a simular todo el proceso al presionar click derecho abajo en la izquierda la carpeta Setup que contiene todos los procesos y apretar simular. Esto lo hacemos con tal de checkear todo el proceso completo y previsualizar como sería el desarrollo real con la máquina CNC.</p>
-<h6 id="10---repetir-procedimiento-para-la-parte-trasera">10 - Repetir procedimiento para la parte trasera</h6>
-<p>Después de que finalizamos el proceso de desbaste y las trayectorias de terminación del lado frontal del respaldo, debemos hacer el mismo procedimiento pero para la parte trasera. Así pues, debemos volver a repetir los mismos pasos desde el segundo, orientando esta vez la otra cara de la plancha hacia la vista superior.</p>
+
 <hr>
-<p>Todos estos procedimientos de la ultima pieza faltante de la Silla Fresia se resumen en el siguiente video:</p>
+<h3 id="procedimiento-completo">Procedimiento Completo:</h3>
 <div>
     <video 
     width="100%" 
@@ -218,22 +222,50 @@
     </video>
 </div>
 <hr>
+<h3 id="desglose-paso-a-paso">Desglose Paso a paso:</h3>
+<h6 id="01---exportar-el-respaldo-del-modelo">01 - Exportar el Respaldo del Modelo</h6>
+<p>Al abrir el archivo en Fusion 360 procederemos por seleccionar la pieza del respaldo y con click derecho vamos a la opción de crear nuevo componente, una vez hecho esto seleccionamos el componente y lo exportamos como un archivo Fusion (.F3d). Así pues, haremos un upload del nuevo archivo al Fusion 360 y lo abriremos como un nuevo documento.</p>
+<p><img src="/img/Imagenes_Post_03/04.png" alt="Maquina CNC"></p>
+<p><img src="/img/Imagenes_Post_03/03.png" alt="Maquina CNC"></p>
+<h6 id="02---orientar-el-modelo-con-el-origen">02 - Orientar el modelo con el origen</h6>
+<p>En este paso tendremos que mover y alinear nuestro respaldo con respecto a los ejes del Fusion 360, con tal de que presente una ortogonalidad con respecto al origen y nuestra futura plancha que realizaremos en el siguiente paso. Es muy relevante dado que el mecanizado se realiza en torno a las dos caras de la plancha y debe existir simetría, así pues nos tenemos que asegurar de que el lateral de nuetra pieza quede paralelo a la vista Right.</p>
+<p><img src="/img/Imagenes_Post_03/05.png" alt="Maquina CNC"></p>
+<h6 id="03---realizar-plancha">03 - Realizar plancha</h6>
+<p>A continuación nos iremos a la vista superior y haremos un Sketch con respecto a este plano justo por abajo de nuestra pieza. Realizaremos un rectangulo de un tamaño aproximado con tal de que sobre material alrededor y un extrude aproximado también con tal de que nuestra pieza quede contenida por el &ldquo;Stock&rdquo;/Plancha. Procedemos así a cambiar la opacidad de la plancha a un 20% con tal de facilitar los pasos posteriores.</p>
+<p><img src="/img/Imagenes_Post_03/06.png" alt="Maquina CNC"></p>
+<h6 id="04---manufactura-y-setup-inicial">04 - Manufactura y Setup Inicial</h6>
+<p>Con toda esta configuración inicial lista pasamos al area de manufactura. En donde tendremos que hacer el mismo setup que hicimos para las partes anteriores y que se explicaron en el Post anterior. Apretamos la carpeta del Setup y en la pestaña del lado derecho seleccionamos la máquina CNC de 3 Ejes. Luego vamos a la pestaña de Stock y seleccionamos nuestra plancha como objeto solido. Regresamos al Setup y vamos a definir la orientación Z &amp; X como la cara superior y el borde mas cercano a nosotros respectivamente. Luego el punto de origen en la esquina inferior izquierda. Para finalmente definir nuestra pieza como el modelo.</p>
+<p><img src="/img/Imagenes_Post_03/07.png" alt="Maquina CNC"></p>
+<h6 id="05---definir-la-proyección-del-respaldo-en-la-plancha-como-nuestro-límite-del-mecanizado">05 - Definir la proyección del respaldo en la plancha como nuestro límite del mecanizado</h6>
+<p>Regresamos ahorita al área de Diseño y haremos un nuevo sketch pero esta vez en la cara superior de la plancha. Y vamos a Create, Proyect, Proyect (o simplemente apretamos la tecla P), y si le hacemos click a nuestro objeto se hará una proyeccion de nuestra pieza en la cara superior de nuestro Stock/Plancha.</p>
+<p><img src="/img/Imagenes_Post_03/08.png" alt="Maquina CNC"></p>
+<p><img src="/img/Imagenes_Post_03/09.png" alt="Maquina CNC"></p>
+<h6 id="06---adaptative-cleaning">06 - Adaptative Cleaning</h6>
+<p>Ahorita en el área de Manufactura comenzaremos por realizar la primera función que corresponde a Adaptative Cleaning, que es una limpieza o desbaste adaptativo que es basicamente el remover material con tal de acelerar un poco el procedimiento posterior de obtención de la superficie deseada en nuestra pieza. En este caso se debe seleccionar la Fresa de “6 mm Falt Endmill” ocupada en las piezas anteriores, pero modificándole su “Lenght below holder” de 22,5 a 40, para que la fresa no choque con la estructura que está cortando. Una vez establecida la fresa, vamos a la pestaña de geometría en nuestra ventana de la derecha y  determinamos cual será el “Machine Boundary” (area donde trabajará la fresa), siendo este una selección del sketch creado en el paso anterior. En cuanto al modelo, seleccionamos el respaldo. Finalmente,sabemos que al contar con una fresa de 6 mm debemos ajustar el Optimal Load de 6mm a 3mm con tal de no exigirle mas del 50% del diametro de la fresa.</p>
+<p><img src="/img/Imagenes_Post_03/10.png" alt="Maquina CNC"></p>
+<p><img src="/img/Imagenes_Post_03/11.png" alt="Maquina CNC"></p>
+<p><img src="/img/Imagenes_Post_03/12.png" alt="Maquina CNC"></p>
+<p><img src="/img/Imagenes_Post_03/13.png" alt="Maquina CNC"></p>
+<h6 id="07---parallel">07 - Parallel</h6>
+<p>Luego utilizaremos una segunda funcion llamada Parallel, utilizaremos la misma fresa configurada en el paso anterior (pudiendo optar también por una fresa de punta redonda que pueda darle mayor precisión al rallado, como por puede ser la “6mm Ball End Mill” y con un mismo “Lenght below holder” de 40 ), en la Geometría seleccionamos nuevamente el mismo “Machine Boundary” y el mismo modelo (sin incluir el Setup Model).</p>
+<p><img src="/img/Imagenes_Post_03/14.png" alt="Maquina CNC"></p>
+<p><img src="/img/Imagenes_Post_03/15.png" alt="Maquina CNC"></p>
+<h6 id="08---parallel-02">08 - Parallel 02</h6>
+<p>Con tal de obtener una mejor superficie de tallado en el modelo siempre se recomienda hacer un segundo Parallel en dirección perpenticular. Por lo que simplemente vamos a la carpeta de setup y ducplicaremos el paso anterior de Parallel, pero le haremos Edit y en la pestaña de passes cambiaremos el Pass Direction a 90 grados y bajando su stepover de 3mm a 2mm, para lograr así una mejor resolución superficial.</p>
+<p><img src="/img/Imagenes_Post_03/16.png" alt="Maquina CNC"></p>
+<p><img src="/img/Imagenes_Post_03/17.png" alt="Maquina CNC"></p>
+<h6 id="09---simular">09 - Simular</h6>
+<p>Finalmente podemos decir que ya programamos todo el procedimiento para poder crear nuestra ultima pieza de la silla correspondiente al respaldo, por lo que procedemos a simular todo el proceso al presionar click derecho abajo en la izquierda la carpeta Setup que contiene todos los procesos y apretar simular. Esto lo hacemos con tal de checkear todo el proceso completo y previsualizar como sería el desarrollo real con la máquina CNC.</p>
+<p><img src="/img/Imagenes_Post_03/18.png" alt="Maquina CNC"></p>
+<p><img src="/img/Imagenes_Post_03/19.png" alt="Maquina CNC"></p>
+<h6 id="10---repetir-procedimiento-para-la-parte-trasera">10 - Repetir procedimiento para la parte trasera</h6>
+<p>Después de que finalizamos el proceso de desbaste y las trayectorias de terminación del lado frontal del respaldo, debemos hacer el mismo procedimiento pero para la parte trasera. Así pues, debemos volver a repetir los mismos pasos desde el segundo, orientando esta vez la otra cara de la plancha hacia la vista superior.</p>
+<hr>
 <h3 id="algunas-imágenes-del-proceso-real">Algunas imágenes del proceso real:</h3>
 <p>
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
 
 <div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//01.jpg');" >
-				      <img itemprop="thumbnail" src="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//01.jpg" alt="1st" />
-				    </div>
-			      <figcaption>
-		          <p>1st</p>
-			      </figcaption>
-				    <a href="https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//01.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 				    <div class="img" style="background-image: url('https://amenchise.github.io//img/Imagenes_Post_03/Galeria03//02.jpg');" >
@@ -604,6 +636,10 @@
     </div>
 </div>
 </p>
+<hr>
+<h3 id="bibliografía">Bibliografía</h3>
+<p><a href="https://www.interempresas.net/MetalMecanica/Articulos/264276-Estrategias-de-mecanizado-por-corte-de-2-5-ejes-y-3-ejes.html">https://www.interempresas.net/MetalMecanica/Articulos/264276-Estrategias-de-mecanizado-por-corte-de-2-5-ejes-y-3-ejes.html</a></p>
+<p><a href="#top">[Volver Arriba]</a></p>
 
 </div>
 </div>
